@@ -57,7 +57,8 @@ class Singleton3 {
     private Singleton3() {
     }
 
-    //volatile 将值的更新立即刷到主存
+    //volatile    1.保持线程可见性  2.禁止指令重排序
+
     private static volatile Singleton3 instance;
 
     public static Singleton3 getInstance() {
